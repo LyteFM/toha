@@ -47,7 +47,7 @@
   {{ $sections = (index site.Data site.Language.Lang).sections }}
 {{ end }}
 
-<nav class="navbar navbar-expand-xl top-navbar initial-navbar" id="top-navbar">
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow" id="top-navbar">
   <div class="container">
     <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
       {{ if $invertedLogo }}
@@ -56,7 +56,7 @@
       {{- site.Title -}}
     </a>
     <button
-      class="navbar-toggler navbar-dark"
+      class="navbar-toggler navbar-light"
       id="navbar-toggler"
       type="button"
       data-toggle="collapse"
